@@ -1,5 +1,5 @@
 package vehiculo.ciclomotor;
 
-public class Quad {
+public class Quad extends Ciclomotor {
 	private String tamaño;
 }

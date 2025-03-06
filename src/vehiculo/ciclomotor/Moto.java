@@ -1,5 +1,5 @@
 package vehiculo.ciclomotor;
 
-public class Moto {
+public class Moto extends Ciclomotor {
 	private String tipo;
 }
