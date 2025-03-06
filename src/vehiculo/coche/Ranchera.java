@@ -1,5 +1,7 @@
 package vehiculo.coche;
 
+import vehiculo.ciclomotor.Moto;
+
 public class Ranchera extends Coche {
 	private int capacidadMaletero;
 	private boolean frenosTraseros;
@@ -46,6 +48,18 @@ public class Ranchera extends Coche {
 			System.out.println("El coche no esta derrapando");
 
 		}
+	}
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Ranchera ranchera = (Ranchera) otro;
+		boolean iguales;
+		if (this.getMarca() == (ranchera.getMarca()) && this.getModelo() == ranchera.getModelo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
 	}
 
 }

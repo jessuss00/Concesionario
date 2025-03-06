@@ -1,5 +1,7 @@
 package vehiculo.coche;
 
+import vehiculo.ciclomotor.Moto;
+
 public class Sedan extends Coche {
 	private int puertas;
   private boolean frenosTraseros;
@@ -45,5 +47,17 @@ public class Sedan extends Coche {
 			System.out.println("El coche no esta derrapando");
 
 		}
+	}
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Sedan sedan = (Sedan) otro;
+		boolean iguales;
+		if (this.getMarca() == (sedan.getMarca()) && this.getModelo() == sedan.getModelo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
 	}
 }
