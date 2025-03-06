@@ -7,8 +7,8 @@ public class Coche extends Vehiculo {
 
 	private Combustible combustible;
 	
-	public Coche(String marca, String modelo, int matricula,Combustible combustible) {
-		super(marca, modelo, matricula);
+	public Coche(String marca, String modelo, int matricula,int velocidadActual, Combustible combustible) {
+		super(marca, modelo, matricula, velocidadActual);
 		this.combustible=combustible;
 	}
 	

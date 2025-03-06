@@ -5,8 +5,8 @@ public class Quad extends Ciclomotor {
 	private String tamaño;
 	private boolean ruedaDelanteraElevada;
 
-	public Quad(String marca, String modelo, int matricula, int cilindrada, String tamaño) {
-		super(marca, modelo, matricula, cilindrada);
+	public Quad(String marca, String modelo, int matricula, int velocidadActual, int cilindrada, String tamaño) {
+		super(marca, modelo, matricula, cilindrada,  velocidadActual);
 		this.tamaño = tamaño;
 		this.ruedaDelanteraElevada = false;
 	}

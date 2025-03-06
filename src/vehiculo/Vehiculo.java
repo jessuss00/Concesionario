@@ -5,17 +5,26 @@ public abstract class Vehiculo {
 	private String marca;
 	private String modelo;
 	private int matricula;
+	private int velocidadActual;
 	
 	
 
-	public Vehiculo(String marca, String modelo, int matricula) {
+	public Vehiculo(String marca, String modelo, int matricula, int velocidadActual) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.matricula = matricula;
+		this.velocidadActual=velocidadActual;
 	}
 	public abstract void acelerar();
 	
+	
 
+	public void setVelocidadActual(int velocidadActual) {
+		this.velocidadActual = velocidadActual;
+	}
+	public int getVelocidadActual() {
+		return velocidadActual;
+	}
 	public String getMarca() {
 		return marca;
 	}
