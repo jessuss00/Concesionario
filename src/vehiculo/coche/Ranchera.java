@@ -9,6 +9,16 @@ public class Ranchera extends Coche {
 		this.capacidadMaletero=capacidadMaletero;
 
 	}
+	@Override
+	public void acelerar() {
+		do {
+			System.out.println("Dale al rancherita compi");
+			System.out.println(getVelocidadActual());
+			setVelocidadActual(getVelocidadActual()+5);
+			System.out.println(getVelocidadActual());
+		} while (getVelocidadActual()<120);
+		
+	}
 
 	@Override
 	public String toString() {

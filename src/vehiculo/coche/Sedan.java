@@ -7,10 +7,17 @@ public class Sedan extends Coche {
 	public Sedan(String marca, String modelo, int matricula,int velocidadActual, Combustible combustible,int puertas) {
 		super(marca, modelo, matricula, velocidadActual, combustible);
 		this.puertas=puertas;
-
+	}
 	
-
-
+	@Override
+	public void acelerar() {
+		do {
+			System.out.println("Dale a la sedan compi");
+			System.out.println(getVelocidadActual());
+			setVelocidadActual(getVelocidadActual()+5);
+			System.out.println(getVelocidadActual());
+		} while (getVelocidadActual()<120);
+		
 	}
 
 	@Override

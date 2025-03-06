@@ -2,7 +2,7 @@ package vehiculo.furgoneta;
 
 import vehiculo.Vehiculo;
 
-public class Furgoneta extends Vehiculo {
+public abstract class Furgoneta extends Vehiculo {
 	private Tipo tipo;
 	
 	public Furgoneta(String marca, String modelo, int matricula,int velocidadActual, Tipo tipo) {
@@ -10,8 +10,6 @@ public class Furgoneta extends Vehiculo {
 		this.tipo=tipo;
 	}
 
-	
-	
 
 	public Tipo getTipo() {
 		return tipo;
@@ -20,13 +18,7 @@ public class Furgoneta extends Vehiculo {
 
 
 
-	@Override
-	public void acelerar() {
-		do {
-			System.out.println("Dale a la furgo compi");
-			setVelocidadActual(getVelocidadActual()+1);
-		} while (getVelocidadActual()<=120);
-		
-	}
+
+
 
 }

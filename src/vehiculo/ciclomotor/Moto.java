@@ -13,6 +13,16 @@ public class Moto extends Ciclomotor {
     this.ruedaDelanteraElevada = false;
 
 	}
+	@Override
+	public void acelerar() {
+		do {
+			System.out.println("Dale al puño compi");
+			System.out.println(getVelocidadActual());
+			setVelocidadActual(getVelocidadActual()+5);
+			System.out.println(getVelocidadActual());
+		} while (getVelocidadActual()<120);
+		
+	}
 
 	@Override
 	public void subirCaballito() {
