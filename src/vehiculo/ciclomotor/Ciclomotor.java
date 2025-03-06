@@ -9,13 +9,12 @@ public abstract class Ciclomotor extends Vehiculo {
 	public Ciclomotor(String marca, String modelo, int matricula, int velocidadActual, int cilindrada) {
 		super(marca, modelo, matricula, velocidadActual);
 		this.cilindrada=cilindrada;
+
 	}
-	
-	
+
 	public int getCilindrada() {
 		return cilindrada;
 	}
-
 
 	@Override
 	public void acelerar() {

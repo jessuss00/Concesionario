@@ -1,18 +1,18 @@
 package vehiculo.ciclomotor;
 
 public class Moto extends Ciclomotor {
-	
 
 	private String tipo;
-  private boolean ruedaDelanteraElevada;
+	private boolean ruedaDelanteraElevada;
+
 
 	
 	public Moto(String marca, String modelo, int matricula, int velocidadActual, int cilindrada,String tipo) {
 		super(marca, modelo, matricula, cilindrada,  velocidadActual);
 		this.tipo=tipo;
     this.ruedaDelanteraElevada = false;
-	}
 
+	}
 
 	@Override
 	public void subirCaballito() {
