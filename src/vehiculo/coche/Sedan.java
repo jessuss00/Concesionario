@@ -2,12 +2,15 @@ package vehiculo.coche;
 
 public class Sedan extends Coche {
 	private int puertas;
-	private boolean frenosTraseros;
+  private boolean frenosTraseros;
+	
+	public Sedan(String marca, String modelo, int matricula,int velocidadActual, Combustible combustible,int puertas) {
+		super(marca, modelo, matricula, velocidadActual, combustible);
+		this.puertas=puertas;
 
-	public Sedan(String marca, String modelo, int matricula, Combustible combustible, int puertas) {
-		super(marca, modelo, matricula, combustible);
-		this.puertas = puertas;
-		this.frenosTraseros = false;
+	
+
+
 	}
 
 	@Override

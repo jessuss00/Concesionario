@@ -4,10 +4,9 @@ public class Ranchera extends Coche {
 	private int capacidadMaletero;
 	private boolean frenosTraseros;
 
-	public Ranchera(String marca, String modelo, int matricula, Combustible combustible, int capacidadMaletero) {
-		super(marca, modelo, matricula, combustible);
-		this.capacidadMaletero = capacidadMaletero;
-		this.frenosTraseros = false;
+	public Ranchera(String marca, String modelo, int matricula,int velocidadActual, Combustible combustible, int capacidadMaletero) {
+		super(marca, modelo, matricula, velocidadActual,combustible);
+		this.capacidadMaletero=capacidadMaletero;
 
 	}
 
