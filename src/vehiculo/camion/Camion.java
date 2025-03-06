@@ -2,6 +2,7 @@ package vehiculo.camion;
 
 
 import vehiculo.Vehiculo;
+import vehiculo.ciclomotor.Moto;
 
 public class Camion extends Vehiculo {
 	private int capacidadCarga;
@@ -39,9 +40,26 @@ public class Camion extends Vehiculo {
 		return capacidadCarga;
 	}
 	@Override
-	public void acelerar() {
-		// TODO Auto-generated method stub
+	public boolean equals(Object otro) {// compara this con otro
+		Camion camion = (Camion) otro;
+		boolean iguales;
+		if (this.getMarca() == (camion.getMarca()) && this.getModelo() == camion.getModelo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
 
+	}
+	@Override
+	public void acelerar() {
+		do {
+			System.out.println("Dale al camion compi");
+			System.out.println(getVelocidadActual());
+			setVelocidadActual(getVelocidadActual()+5);
+			System.out.println(getVelocidadActual());
+		} while (getVelocidadActual()<120);
+		
 	}
 	@Override
 	public String toString() {

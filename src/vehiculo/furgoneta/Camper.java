@@ -1,5 +1,7 @@
 package vehiculo.furgoneta;
 
+import vehiculo.ciclomotor.Moto;
+
 public class Camper extends Furgoneta {
 	
 
@@ -29,7 +31,18 @@ public class Camper extends Furgoneta {
 		return "Camper [descripcion=" + descripcion + ", getTipo()=" + getTipo() + ", getMarca()=" + getMarca()
 				+ ", getModelo()=" + getModelo() + ", getMatricula()=" + getMatricula() + "]";
 	}
-	
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Camper camper = (Camper) otro;
+		boolean iguales;
+		if (this.getMarca() == (camper.getMarca()) && this.getModelo() == camper.getModelo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 	
 	
 }

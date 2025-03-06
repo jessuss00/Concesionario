@@ -48,4 +48,18 @@ public class Quad extends Ciclomotor {
 
 		}
 	}
+	
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Quad quad = (Quad) otro;
+		boolean iguales;
+		if (this.getMarca() == (quad.getMarca()) && this.getModelo() == quad.getModelo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
+	
 }
