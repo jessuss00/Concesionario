@@ -2,7 +2,7 @@ package vehiculo.ciclomotor;
 
 import vehiculo.Vehiculo;
 
-public class Ciclomotor extends Vehiculo {
+public abstract class Ciclomotor extends Vehiculo {
 	private int cilindrada;
 
 	@Override
@@ -10,4 +10,9 @@ public class Ciclomotor extends Vehiculo {
 		// TODO Auto-generated method stub
 
 	}
+
+	public abstract void subirCaballito();
+
+	public abstract void bajarCaballito();
+
 }
