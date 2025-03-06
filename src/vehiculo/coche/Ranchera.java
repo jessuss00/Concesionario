@@ -1,5 +1,5 @@
 package vehiculo.coche;
 
-public class Ranchera {
+public class Ranchera extends Coche {
 	private int capacidadMaletero;
 }

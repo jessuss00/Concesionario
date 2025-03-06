@@ -1,5 +1,5 @@
 package vehiculo.furgoneta;
 
-public class Camper {
+public class Camper extends Furgoneta {
 	private String descripcion;
 }

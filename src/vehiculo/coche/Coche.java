@@ -1,5 +1,7 @@
 package vehiculo.coche;
 
-public class Coche {
+import vehiculo.Vehiculo;
+
+public class Coche extends Vehiculo {
 	private Combustible combustible;
 }
