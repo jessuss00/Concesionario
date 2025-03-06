@@ -1,5 +1,8 @@
 package vehiculo.furgoneta;
 
-public class Furgoneta {
+import vehiculo.Vehiculo;
+
+public class Furgoneta extends Vehiculo {
+	private Tipo tipo;
 
 }
