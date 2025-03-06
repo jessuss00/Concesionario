@@ -3,7 +3,19 @@ package vehiculo.ciclomotor;
 public class Quad extends Ciclomotor {
 
 	private String tamaño;
-	private boolean ruedaDelanteraElevada;
+  private boolean ruedaDelanteraElevada;
+	
+	public Quad(String marca, String modelo, int matricula, int cilindrada, String tamaño) {
+		super(marca, modelo, matricula, cilindrada);
+		this.tamaño=tamaño;
+    this.ruedaDelanteraElevada = false;
+	}
+
+	@Override
+	public String toString() {
+		return "Quad [tamaño=" + tamaño + ", getCilindrada()=" + getCilindrada() + ", getMarca()=" + getMarca()
+				+ ", getModelo()=" + getModelo() + ", getMatricula()=" + getMatricula() + "]";
+	}
 
 	@Override
 	public void subirCaballito() {
@@ -25,5 +37,4 @@ public class Quad extends Ciclomotor {
 
 		}
 	}
-
 }
