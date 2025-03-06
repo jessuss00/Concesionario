@@ -3,12 +3,12 @@ package vehiculo.ciclomotor;
 public class Quad extends Ciclomotor {
 
 	private String tamaño;
-  private boolean ruedaDelanteraElevada;
-	
+	private boolean ruedaDelanteraElevada;
+
 	public Quad(String marca, String modelo, int matricula, int cilindrada, String tamaño) {
 		super(marca, modelo, matricula, cilindrada);
-		this.tamaño=tamaño;
-    this.ruedaDelanteraElevada = false;
+		this.tamaño = tamaño;
+		this.ruedaDelanteraElevada = false;
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class Quad extends Ciclomotor {
 		} else {
 			System.out.println("La moto ya esta haciendo el caballito");
 		}
-	}
+	}  
 
 	@Override
 	public void bajarCaballito() {
